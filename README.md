@@ -70,7 +70,7 @@
 
 ## 📂 Project Structure
 
-> The tree below follows Expo Router's file-based routing and reflects how the app is organized. Some file names may differ slightly in the actual repo.
+> The tree below follows Expo Router's file-based routing and reflects how the app is organized. Some file names may differ slightly in the actual repo. This project adopts the Barrel Pattern architecture by leveraging index.ts/x entry points to maintain modular encapsulation and clean import paths.
 
 ```
 music-shop/
@@ -293,7 +293,7 @@ This project was built purely as a personal portfolio piece and is **not open so
 
 ## 📂 Layihə Strukturu
 
-> Aşağıdakı struktur Expo Router-in fayl-əsaslı routing sisteminə uyğundur və tətbiqin ümumi təşkilini əks etdirir. Faktiki repodakı bəzi fayl adları bir qədər fərqli ola bilər.
+> Aşağıdakı struktur Expo Router-in fayl-əsaslı routing sisteminə uyğundur və tətbiqin ümumi təşkilini əks etdirir. Faktiki repodakı bəzi fayl adları bir qədər fərqli ola bilər. Bu layihədə modulyar kapsullaşdırmanı təmin etmək və import yollarını təmiz saxlamaq üçün qovluq giriş nöqtələrində index.ts/x fayllarının istifadə olunduğu Barrel Pattern memarlığı tətbiq olunub.
 
 ```
 music-shop/
