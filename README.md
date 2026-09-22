@@ -29,7 +29,7 @@
 
 | Platform | Link                                                                                                                   |
 | -------- | ---------------------------------------------------------------------------------------------------------------------- |
-| Android  | [Download APK](#)                                                                                                      |
+| Android  | [Download APK](https://github.com/MeftunMemmedov/music-shop_rnexpo/releases/tag/v1.0.0)                                                                                                      |
 | Android  | [Try on Appetize.io](https://appetize.io/app/android/com.anonymous.shopapp?device=pixel7&osVersion=13.0&toolbar=true)  |
 | iOS      | [Try on Appetize.io](https://appetize.io/app/ios/com.anonymous.shopapp?device=iphone14pro&osVersion=16.2&toolbar=true) |
 
@@ -252,7 +252,7 @@ This project was built purely as a personal portfolio piece and is **not open so
 
 | Platforma | Link                                                                                                                       |
 | --------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Android   | [APK-ni yüklə](#)                                                                                                          |
+| Android   | [APK-ni yüklə](https://github.com/MeftunMemmedov/music-shop_rnexpo/releases/tag/v1.0.0)                                                                                                          |
 | Android   | [Appetize.io-da sınayın](https://appetize.io/app/android/com.anonymous.shopapp?device=pixel7&osVersion=13.0&toolbar=true)  |
 | iOS       | [Appetize.io-da sınayın](https://appetize.io/app/ios/com.anonymous.shopapp?device=iphone14pro&osVersion=16.2&toolbar=true) |
 
