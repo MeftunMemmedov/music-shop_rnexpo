@@ -297,42 +297,42 @@ This project was built purely as a personal portfolio piece and is **not open so
 
 ```
 music-shop/
-src/                                       # Bütün tətbiqin kod bazasını ehtiva edən əsas mənbə qovluğu
-├── api/                                   # API klient konfiqurasiyası, endpoynt tərifləri və HTTP sorğuları
-│   ├── auth/                              # Autentifikasiya ilə bağlı API endpoyntləri və xidmətləri
-│   │   ├── helpers/                       # Autentifikasiya sorğularına özəl köməkçi funksiyalar (məs. tokenin pars olunması)
-│   │   └── index.ts                       # Autentifikasiya API funksiyalarını ixrac edən əsas giriş nöqtəsi
-│   ├── helpers/                           # Ümumi API köməkçi funksiyaları (məs. sorğu parametrlərinin formatlaşdırıcıları, URL qurucuları)
-│   └── index.ts                           # Əsas HTTP klient quraşdırması (məs. Axios/fetch instansiyası, interceptor-lar)
-├── app/                                   # Fayl əsaslı yönləndirmə (routing) qovluğu (Expo Router)
-│   ├── (drawer)/                          # Yan menyu (drawer) naviqasiya səhifələri üçün marşrut qrupu
-│   ├── pagename/                          # Müəyyən bir marşrut (route) yolunu təmsil edən qovluq
-│   │   └── index.tsx                      # 'pagename' marşrutu üçün render edilən əsas ekran komponenti
-│   ├── _layout.tsx                        # Naviqasiya strukturlarını təyin edən kök/iç-içə leyaut (layout) bükücüsü
-│   └── index.tsx                          # Ana ekran / ilkin giriş səhifəsi marşrutu
-├── assets/                                # Statik media faylları və dizayn resursları
-│   ├── fonts/                             # Xüsusi şrift və tipoqrafiya faylları (.ttf, .otf)
-│   └── images/                            # Tətbiq şəkilləri, vektorlar və ikonlar
-├── components/                            # Yenidən istifadə oluna bilən, modulyar UI komponentləri (məs. Düymələr, İnputlar, Kartlar)
-├── constants/                             # Tətbiq miqyasında sabitilər (constants), rəng palitraları, storage açarları və s.
-├── helpers/                               # Ümumi təyinatlı yardımçı və köməkçi funksiyalar
-├── hooks/                                 # Xüsusi React hook-ları (məs. useWishlist, useResponsive və s.)
-├── i18n/                                  # Beynəlxalqlaşdırma (i18n) quraşdırması, tərcümə açarları və lokal konfiqurasiyaları
-├── providers/                             # Tətbiqi əhatə edən provider-lər (kontekst təminatçıları)
-├── schemas/                               # Məlumat və forma doğrulama (validation) sxemləri (məs. Zod)
-├── screens/                               # Müstəqil görünüş komponentləri və tam ekran UI düzəlişləri
-├── sqlite/                                # Lokal SQLite verilənlər bazasının inisializasiyası, xüsusi sorğular və miqrasiyalar
-├── store/                                 # Redux Toolkit qlobal vəziyyət idarəetməsi (state management)
-│   ├── sliceName/                         # Domenə özəl vəziyyət dilimi (state slice) (məs. user, cart)
-│   │   ├── asyncThunks/                   # Asinxron Redux thunk action tərifləri
-│   │   │   ├── actions.ts                 # Asinxron thunk action-ları
-│   │   │   └── index.ts                   # API qarşılıqlı əlaqələri üçün asinxron thunk tətbiqləri (implementasiyaları)
-│   │   ├── index.ts                       # Redux slice tərifi (reducer-lər və sinxron action creator-lar)
-│   │   └── initialState.ts                # Bu slice üçün ilkin vəziyyət (initial state) dəyərləri
-│   ├── hooks.ts                           # Tipləndirilmiş Redux hook-ları (məs. useAppDispatch, useAppSelector)
-│   ├── index.ts                           # Redux store konfiqurasiyası və kök reducer (root reducer) quraşdırması
-│   └── provider.tsx                       # Tətbiq ağacı üçün Redux StoreProvider komponent bükücüsü
-└── types/                                 # Qlobal TypeScript tip tərifləri, interfeyslər və bəyannamə (declaration) faylları
+src/                                          # Bütün tətbiqin kod bazasını ehtiva edən əsas source qovluğu
+├── api/                                      # API client konfiqurasiyası, endpoint tərifləri və HTTP sorğuları
+│   ├── auth/                                 # Authentication ilə bağlı API endpoint-ləri və xidmətləri
+│   │   ├── helpers/                          # Auth sorğularına xas helper utilitləri (məs., token parsing)
+│   │   └── index.ts                          # Authentication API funksiyalarını export edən əsas entry point
+│   ├── helpers/                              # Ümumi API utilitləri (məs., query params formatlayıcıları, URL builder-lər)
+│   └── index.ts                              # Baza HTTP client quraşdırması (məs., Axios/fetch instance, interceptor-lar)
+├── app/                                      # Fayl əsaslı routing qovluğu (Expo Router)
+│   ├── (drawer)/                             # Drawer navigation səhifələri üçün route qrupu
+│   ├── pagename/                             # Xüsusi bir route yolunu (path) təmsil edən qovluq
+│   │   └── index.tsx                         # 'pagename' route-u üçün render edilən əsas screen komponenti
+│   ├── _layout.tsx                           # Navigation strukturlarını təyin edən root/nested layout wrapper-i
+│   └── index.tsx                             # Home screen / ilkin giriş səhifəsi route-u
+├── assets/                                   # Statik media faylları və dizayn asset-ləri
+│   ├── fonts/                                # Custom tipoqrafiya və font faylları (.ttf, .otf)
+│   └── images/                               # Tətbiq şəkilləri, vektorlar və icon-lar
+├── components/                               # Yenidən istifadə oluna bilən, modulyar UI komponentləri (məs., Button, Input, Card)
+├── constants/                                # Tətbiq miqyasında constant-lar, rəng palitraları və konfiqurasiya dəyişənləri
+├── helpers/                                  # Ümumi təyinatlı utilit və helper funksiyaları
+├── hooks/                                    # Custom React hook-ları (məs., useDebounce, useNetworkStatus)
+├── i18n/                                     # Internationalization (i18n) quraşdırması, tərcümə key-ləri və locale konfiqurasiyaları
+├── providers/                                # Tətbiqi əhatə edən (wrap edən) React Context provider-ləri
+├── schemas/                                  # Data və form validation sxemləri (məs., Zod, Yup)
+├── screens/                                  # Standalone view komponentləri və tam ekranlı (full-screen) UI layout-ları
+├── sqlite/                                   # Lokal SQLite database inisializasiyası, custom query-lər və miqrasiyalar
+├── store/                                    # Redux Toolkit qlobal state management-i
+│   ├── sliceName/                            # Domenə xas state slice-ı (məs., user, cart, products)
+│   │   ├── asyncThunks/                      # Asinxron Redux thunk action tərifləri
+│   │   │   ├── actions.ts                    # API əlaqələri üçün asinxron thunk implementasiyaları
+│   │   │   └── index.ts                      # Bu slice-dakı bütün asinxron thunk-lar üçün export faylı
+│   │   ├── index.ts                          # Redux slice tərifi (reducer-lər və sinxron action creator-lar)
+│   │   └── initialState.ts                   # Bu slice üçün default initial state dəyərləri
+│   ├── hooks.ts                              # Tipləndirilmiş (typed) Redux hook-ları (məs., useAppDispatch, useAppSelector)
+│   ├── index.ts                              # Redux store konfiqurasiyası və root reducer quraşdırması
+│   └── provider.tsx                          # Tətbiq ağacı (app tree) üçün Redux StoreProvider component wrapper-i
+└── types/                                    # Qlobal TypeScript type tərifləri, interface-lər və declaration faylları
 ```
 
 ## 🏗️ Arxitektura
